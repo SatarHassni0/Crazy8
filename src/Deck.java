@@ -1,7 +1,11 @@
+import java.util.Collections;
+import java.util.List;
+
 public class Deck extends Hand {
 
-
     public Deck() {
+        populate();
+        shuffle();
 
     }
 
@@ -15,10 +19,15 @@ public class Deck extends Hand {
     }
 
     public void shuffle() {
+        Collections.shuffle(getCards());
+    }
+
+    public void initGame() {
 
     }
 
-  /*  public int cardsLeft();
+     public Card getTopCard() {
+        return this.getCards().get(0);
+     }
 
-    public Card dealCard();*/
 }
