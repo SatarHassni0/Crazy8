@@ -19,6 +19,6 @@ public class Card {
     public String toString() {
         String str = "";
         str += rank.toString() + " of " + suit.toString();
-        return  str;
+        return str;
     }
 }
